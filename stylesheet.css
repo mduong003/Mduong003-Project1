@@ -71,14 +71,6 @@ p {
   text-align: center;
 }
 
-
-.brighter {
-  display: flex;
-  flex-direction: column;  
-  align-items: center;
-  gap: 10px;
-}
-
 .brighter-image, .darker-image{
   display: flex;           /* make images horizontal */
   flex-direction: row;     /* ensure images sit side by side */
@@ -94,4 +86,17 @@ p {
 
 code {
   color: #573b48;
+}
+.texture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.texture-images {
+  display: flex;             
+  justify-content: center;   
+  flex-direction: row;    
+  background-color: rgb(52, 16, 16); 
+  gap: 10px;   
 }
