@@ -100,3 +100,11 @@ code {
   background-color: rgb(52, 16, 16); 
   gap: 10px;   
 }
+
+.project-code {
+  background-color: #7f5669;
+  width: 200px;
+}
+a {
+  color: #311f27;      
+}
