@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Mary Duong's Project 1</title>
+      <link rel="stylesheet" href="stylesheet.css">
+   </head>
+   <body> 
+      <h1>Project 1 Showcase</h1>
+      <div class="normal">
+         <h2>Normal Textured Square From Loaded PPM File</h2>
+         <img src="img/normal.png" alt="normal square"/>
+      </div>
+
+      <div class="translate">
+         <h2>Translating the Square</h2>
+         <img src="img/translate-square.gif" alt="translate demo">
+      </div>
+
+      <div class="rotate">
+         <h2>Rotating the Square</h2>
+         <img src="img/rotate.gif" alt="rotate demo"/>
+      </div>
+
+      <div class="scale">
+         <h2>Scaling the Square</h2>
+         <img src="img/scale.gif" alt="scale demo"/>
+      </div>
+
+      <div class="brightness">
+         <h2>Adjusting the Brightness of the Square</h2>
+         <div class="brighter">
+            <div class="brighter-image">
+               <img src="img/higher_brightness.png" alt="brighter square"/>
+               <img src="img/brighten.gif" alt="brighter demo"/>
+            </div>
+         </div>
+         <div class="darker">
+            <div class="darker-image">
+               <img src="img/lower_brightness.png" alt="darker square"/>
+               <img src="img/darken.gif" alt="darken demo"/>
+            </div>
+         </div>
+      </div>
+      <div class="description">
+         <h2>Description of Project</h2>
+         <div class="textbox">
+            <p>One feature that was relatively simple to add was the <code>r_keyPressed()</code> function, which resets the square image back to its original state. I found this feature easy to implement 
+               because it only required resetting the values of <code>rect_pos</code>, <code>rect_scale</code>, and <code>rect_angle</code>. Since these variables were initialized at the beginning, 
+               I simply reassigned their values to restore the square to its original state. A more challenging feature to implement was adjusting brightness using keyboard input. Initially, I had brightness changes occur in the 
+               <code>loadImage()</code> function when the image was first loaded. However, I realized this approach was inefficient since I would have to reload the image every time the brightness 
+               changed. To resolve this, I integrated the brightness adjustment directly into the OpenGL code, allowing me to update a brightness variable dynamically based on key presses. An <a href="https://learnopengl.com/Advanced-Lighting/Gamma-Correction" target="_blank" rel="noopener noreferrer"> online resource</a> 
+               and the provided code OpenGL helped guide this implementation. Overall, this project was made easier thanks to the Homework 1 assignment and the in-class slides. For example, determining when 
+               to trigger <code>translate</code>, <code>rotate</code>, and <code>scale</code> based on mouse-click position was straightforward because I reused and adapted helper functions from HW1, modifying them 
+               to work with squares instead of triangles. For instance, I set translate to <code>true</code> when <code>pointInSquare()</code> returned <code>true</code>, while <code>pointSquareCornerDist()</code> 
+               and <code>pointSquareEdgeDist()</code> handled <code>scale</code> and <code>rotate</code>, respectively.</p>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background: #853f4b;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto 10px auto;
+  background: #954848;
+  color: rgb(0, 0, 0);
+  width: 600px;
+  margin-bottom: 10px;
+}
+
+
+div {
+  margin: 30px auto;
+  max-width: 100%;
+  padding: 20px;
+  background: rgb(95, 75, 75);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 500px;
+  height: 500px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: rgb(52, 16, 16);
+}
+
+p {
+  text-align: center;
+  margin: 0;
+}
+
+.normal, .translate, .rotate, .scale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.normal-description, .translate-description, .rotate-description, .scale-description {
+  background-color: grey;
+}
+
+.brightness {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.brightness h2 {
+  text-align: center;
+}
+
+
+.brighter {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 10px;
+}
+
+.brighter-image, .darker-image{
+  display: flex;           /* make images horizontal */
+  flex-direction: row;     /* ensure images sit side by side */
+  gap: 10px;
+  background-color: rgb(52, 16, 16);
+}
+
+
+.description .textbox {
+  text-align: center;
+  background-color: gray;
+}
+
+code {
+  color: #573b48;
+}
